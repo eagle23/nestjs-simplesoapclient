@@ -1,12 +1,14 @@
 {
     "name": "simplesoapclient",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "NestJS Simple Soap Client",
     "repository": "https://github.com/eagle23/nestjs-simplesoapclient.git",
     "author": "Andrey Orlin <a_orlin@me.com>",
     "license": "MIT",
-    "main": "src",
     "scripts": {
+        "prepublish:npm": "npm run build",
+        "publish:npm": "npm publish --access public",
+        "prepublish:next": "npm run build",
         "prebuild": "rimraf dist",
         "build": "nest build",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -21,18 +23,16 @@
         "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
         "test:e2e": "jest --config ./test/jest-e2e.json"
     },
-
-    "peerDependencies": {
+    "dependencies": {
+        "soap": "^0.36.0"
+    },
+    "devDependencies": {
         "@nestjs/common": "^7.6.13",
         "@nestjs/core": "^7.6.13",
         "@nestjs/platform-express": "^7.6.13",
         "reflect-metadata": "^0.1.13",
         "rimraf": "^3.0.2",
         "rxjs": "^6.6.6",
-        "soap": "^0.36.0"
-    },
-
-    "devDependencies": {
         "@nestjs/cli": "^7.5.6",
         "@nestjs/schematics": "^7.2.7",
         "@nestjs/testing": "^7.6.13",
@@ -54,7 +54,6 @@
         "tsconfig-paths": "^3.9.0",
         "typescript": "^4.1.5"
     },
-
     "jest": {
         "moduleFileExtensions": [
             "js",
