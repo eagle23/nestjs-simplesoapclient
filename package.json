@@ -1,10 +1,14 @@
 {
     "name": "simplesoapclient",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "NestJS Simple Soap Client",
     "repository": "https://github.com/eagle23/nestjs-simplesoapclient.git",
     "author": "Andrey Orlin <a_orlin@me.com>",
     "license": "MIT",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "prepublish:npm": "npm run build",
         "publish:npm": "npm publish --access public",
