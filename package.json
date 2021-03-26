@@ -1,11 +1,11 @@
 {
-    "name": "nestjs-simplesoapclient",
+    "name": "simplesoapclient",
     "version": "1.0.0",
     "description": "NestJS Simple Soap Client",
     "repository": "https://github.com/eagle23/nestjs-simplesoapclient.git",
     "author": "Andrey Orlin <a_orlin@me.com>",
     "license": "MIT",
-
+    "main": "src",
     "scripts": {
         "prebuild": "rimraf dist",
         "build": "nest build",
