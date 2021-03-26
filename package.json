@@ -1,6 +1,6 @@
 {
     "name": "simplesoapclient",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "NestJS Simple Soap Client",
     "repository": "https://github.com/eagle23/nestjs-simplesoapclient.git",
     "author": "Andrey Orlin <a_orlin@me.com>",

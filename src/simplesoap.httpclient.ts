@@ -55,8 +55,6 @@ export const httpClient: ISimplesoapHttpClient = {
                 save(url, res.data)
             }
 
-            console.log(res);
-
             return callback(null, { statusCode: res.status }, res.data)
         } catch(e) {
             callback(e)
