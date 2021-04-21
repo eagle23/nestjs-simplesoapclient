@@ -58,8 +58,8 @@ const wsdlHeaders = {
 }
 
 export const config: ISimplesoapOptions = {
-    name: PUMPING_NAME,
-    wsdl: 'https://mtapi.contentdatapro.com:8443/PumpingGateway/MtPumpingApi.svc?singlewsdl',
+    name: 'SUPER_WSDL_SERVICE',
+    wsdl: 'https://example.com/service.svc?singlewsdl',
     soapOptions: {
         httpClient: httpClient, // axios client
         wsdl_headers: wsdlHeaders,

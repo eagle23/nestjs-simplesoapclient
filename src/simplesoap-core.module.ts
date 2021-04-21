@@ -2,7 +2,7 @@
  * @author Andrey Orlin
  * @email ao@instafxgroup.com
  * @create date 2021-03-25 12:34:24
- * @modify date 2021-03-25 12:34:24
+ * @modify date 2021-04-21 15:36:52
  * @desc SimpleSoapCoreModule
  */
 import { DynamicModule, Global, Module, Provider } from '@nestjs/common';

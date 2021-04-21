@@ -1,6 +1,6 @@
 {
     "name": "simplesoapclient",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "NestJS Simple Soap Client",
     "repository": "https://github.com/eagle23/nestjs-simplesoapclient.git",
     "author": "Andrey Orlin <a_orlin@me.com>",
@@ -27,8 +27,8 @@
         "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
         "test:e2e": "jest --config ./test/jest-e2e.json"
     },
-    "dependencies": {
-        "soap": "^0.36.0"
+    "peerDependencies": {
+        "soap": "^0.37.0"
     },
     "devDependencies": {
         "@nestjs/common": "^7.6.13",
